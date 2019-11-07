@@ -3,6 +3,17 @@ import java.util.Scanner;
 public class MiNumero {
 
 private int x;
+
+	public MiNumero() {
+		x=0;
+		
+	}
+	
+	public MiNumero(int x) {
+		
+		this.x=x;
+		
+	}
 	
 	public int doble() {
 		
@@ -21,19 +32,14 @@ private int x;
 		int c=4*x;
 		return c;
 	}
-	
-	public void cargar() {
 		
-		Scanner teclado=new Scanner(System.in);
-		System.out.println("Ingresa nº:");
-		x=teclado.nextInt();
-				
-	}
 	public static void main(String []args) {
 		
-		MiNumero num=new MiNumero();
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Ingresa nÂº:");
+		int x=teclado.nextInt();
 		
-		num.cargar();
+		MiNumero num=new MiNumero(x);
 		
 		System.out.println("El doble es "+num.doble());
 		System.out.println("El triple es "+num.triple());
