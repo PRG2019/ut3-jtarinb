@@ -17,7 +17,7 @@ public class Coche {
 		modelo=mo;
 	}
 	
-	public void cargar() {
+	public void iniciar() {
 		
 		System.out.println(marca+" "+modelo);
 	}
@@ -25,7 +25,7 @@ public class Coche {
 	public static void main(String[]args) {
 		
 		Coche c=new Coche();
-		c.cargar();
+		c.iniciar();
 		
 		Scanner teclado=new Scanner(System.in);
 		System.out.println("Escribe marca y modelo");
